@@ -10,15 +10,38 @@ import UIKit
 
 class FlickerPhotoTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    let cellIdentifier = "CollectionImageViewCell"
+    var photoArray : Array<PhotoModel> = []
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.collectionView.register( UINib(nibName: "CollectionImageViewCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+  
+    func setupData(_ array : Array<PhotoModel>)  {
+        self.photoArray = array
+        self.collectionView.reloadData()
+    }
+}
+extension FlickerPhotoTableViewCell : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return self.photoArray.count
+        
     }
     
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? CollectionImageViewCell
+        let data = self.photoArray[indexPath.row]
+        (cell as? CollectionImageViewCell)?.setupData(data)
+        return cell ?? UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let returnValue =  CGSize(width:(ScreenSize.kWidth/3), height: 99.0)
+        return returnValue
+    }
 }

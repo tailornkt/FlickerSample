@@ -7,13 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5815BDCD20D95D4A005150CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BDCC20D95D4A005150CB /* AppDelegate.swift */; };
-		5815BDCF20D95D4A005150CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BDCE20D95D4A005150CB /* ViewController.swift */; };
 		5815BDD220D95D4A005150CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5815BDD020D95D4A005150CB /* Main.storyboard */; };
 		5815BDD420D95D4A005150CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5815BDD320D95D4A005150CB /* Assets.xcassets */; };
 		5815BDD720D95D4A005150CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5815BDD520D95D4A005150CB /* LaunchScreen.storyboard */; };
 		5815BDE220D95D4B005150CB /* FlickerSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BDE120D95D4B005150CB /* FlickerSampleTests.swift */; };
 		5815BDED20D95D4B005150CB /* FlickerSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BDEC20D95D4B005150CB /* FlickerSampleUITests.swift */; };
+		5815BDFE20D98AF9005150CB /* RestApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BDFD20D98AF9005150CB /* RestApiRequest.swift */; };
+		5815BE0120DAB70B005150CB /* RestApiCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BE0020DAB70B005150CB /* RestApiCore.swift */; };
+		5815BE0320DAB74D005150CB /* RestApiInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BE0220DAB74D005150CB /* RestApiInterface.swift */; };
+		5815BE1120DADDE9005150CB /* ApiConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BE1020DADDE9005150CB /* ApiConstant.swift */; };
+		5815BE1420DB49E7005150CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BE1320DB49E6005150CB /* AppDelegate.swift */; };
+		5815BE1E20DB4A26005150CB /* FlickerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BE1D20DB4A26005150CB /* FlickerListViewController.swift */; };
+		5815BE2020DB4E91005150CB /* ListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BE1F20DB4E91005150CB /* ListViewProtocol.swift */; };
+		5815BE2220DB4F1A005150CB /* FlickerListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BE2120DB4F1A005150CB /* FlickerListPresenter.swift */; };
+		5815BE2420DB4F65005150CB /* FlickerListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BE2320DB4F65005150CB /* FlickerListInteractor.swift */; };
+		5815BE2820DB5DFD005150CB /* FlickerPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BE2620DB5DFD005150CB /* FlickerPhotoTableViewCell.swift */; };
+		5815BE2920DB5DFD005150CB /* FlickerPhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5815BE2720DB5DFD005150CB /* FlickerPhotoTableViewCell.xib */; };
+		5815BE2D20DBC952005150CB /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BE2C20DBC952005150CB /* TableViewExtension.swift */; };
+		5815BE3120DBD8D5005150CB /* CollectionImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BE2F20DBD8D5005150CB /* CollectionImageViewCell.swift */; };
+		5815BE3220DBD8D5005150CB /* CollectionImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5815BE3020DBD8D5005150CB /* CollectionImageViewCell.xib */; };
+		5815BE3420DC01AC005150CB /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BE3320DC01AC005150CB /* ImageViewExtension.swift */; };
+		588F3AC720DC0C7E00E76439 /* FlickerImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F3AC620DC0C7E00E76439 /* FlickerImageCacheManager.swift */; };
+		588F3AC920DC0DEC00E76439 /* FlickerImageApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F3AC820DC0DEC00E76439 /* FlickerImageApiRequest.swift */; };
+		588F3ACB20DC0F7F00E76439 /* FlickerImageApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F3ACA20DC0F7F00E76439 /* FlickerImageApiManager.swift */; };
+		588F3ACE20DC2D5300E76439 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F3ACD20DC2D5300E76439 /* PhotoModel.swift */; };
+		588F3AD520DC2D9C00E76439 /* FlickerListApiInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F3AD120DC2D9C00E76439 /* FlickerListApiInterface.swift */; };
+		588F3AD620DC2D9C00E76439 /* FlickerListApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F3AD220DC2D9C00E76439 /* FlickerListApiManager.swift */; };
+		588F3AD720DC2D9C00E76439 /* FlickerListApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F3AD420DC2D9C00E76439 /* FlickerListApiRequest.swift */; };
+		588F3ADA20DC2E8C00E76439 /* ListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F3AD920DC2E8C00E76439 /* ListViewControllerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +56,6 @@
 
 /* Begin PBXFileReference section */
 		5815BDC920D95D4A005150CB /* FlickerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5815BDCC20D95D4A005150CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5815BDCE20D95D4A005150CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5815BDD120D95D4A005150CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5815BDD320D95D4A005150CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5815BDD620D95D4A005150CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +66,29 @@
 		5815BDE820D95D4B005150CB /* FlickerSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickerSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5815BDEC20D95D4B005150CB /* FlickerSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerSampleUITests.swift; sourceTree = "<group>"; };
 		5815BDEE20D95D4B005150CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5815BDFD20D98AF9005150CB /* RestApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiRequest.swift; sourceTree = "<group>"; };
+		5815BE0020DAB70B005150CB /* RestApiCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiCore.swift; sourceTree = "<group>"; };
+		5815BE0220DAB74D005150CB /* RestApiInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiInterface.swift; sourceTree = "<group>"; };
+		5815BE1020DADDE9005150CB /* ApiConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstant.swift; sourceTree = "<group>"; };
+		5815BE1320DB49E6005150CB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5815BE1D20DB4A26005150CB /* FlickerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickerListViewController.swift; sourceTree = "<group>"; };
+		5815BE1F20DB4E91005150CB /* ListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewProtocol.swift; sourceTree = "<group>"; };
+		5815BE2120DB4F1A005150CB /* FlickerListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerListPresenter.swift; sourceTree = "<group>"; };
+		5815BE2320DB4F65005150CB /* FlickerListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerListInteractor.swift; sourceTree = "<group>"; };
+		5815BE2620DB5DFD005150CB /* FlickerPhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerPhotoTableViewCell.swift; sourceTree = "<group>"; };
+		5815BE2720DB5DFD005150CB /* FlickerPhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlickerPhotoTableViewCell.xib; sourceTree = "<group>"; };
+		5815BE2C20DBC952005150CB /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
+		5815BE2F20DBD8D5005150CB /* CollectionImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionImageViewCell.swift; sourceTree = "<group>"; };
+		5815BE3020DBD8D5005150CB /* CollectionImageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionImageViewCell.xib; sourceTree = "<group>"; };
+		5815BE3320DC01AC005150CB /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
+		588F3AC620DC0C7E00E76439 /* FlickerImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerImageCacheManager.swift; sourceTree = "<group>"; };
+		588F3AC820DC0DEC00E76439 /* FlickerImageApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerImageApiRequest.swift; sourceTree = "<group>"; };
+		588F3ACA20DC0F7F00E76439 /* FlickerImageApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerImageApiManager.swift; sourceTree = "<group>"; };
+		588F3ACD20DC2D5300E76439 /* PhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		588F3AD120DC2D9C00E76439 /* FlickerListApiInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickerListApiInterface.swift; sourceTree = "<group>"; };
+		588F3AD220DC2D9C00E76439 /* FlickerListApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickerListApiManager.swift; sourceTree = "<group>"; };
+		588F3AD420DC2D9C00E76439 /* FlickerListApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickerListApiRequest.swift; sourceTree = "<group>"; };
+		588F3AD920DC2E8C00E76439 /* ListViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +139,10 @@
 		5815BDCB20D95D4A005150CB /* FlickerSample */ = {
 			isa = PBXGroup;
 			children = (
-				5815BDCC20D95D4A005150CB /* AppDelegate.swift */,
-				5815BDCE20D95D4A005150CB /* ViewController.swift */,
+				5815BE2A20DBC943005150CB /* Utility */,
+				5815BE1520DB49F4005150CB /* FlickerListModule */,
+				5815BE1220DB49E6005150CB /* AppDelegate */,
+				5815BDFA20D98AAA005150CB /* Manager */,
 				5815BDD020D95D4A005150CB /* Main.storyboard */,
 				5815BDD320D95D4A005150CB /* Assets.xcassets */,
 				5815BDD520D95D4A005150CB /* LaunchScreen.storyboard */,
@@ -111,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				5815BDE120D95D4B005150CB /* FlickerSampleTests.swift */,
+				588F3AD920DC2E8C00E76439 /* ListViewControllerTest.swift */,
 				5815BDE320D95D4B005150CB /* Info.plist */,
 			);
 			path = FlickerSampleTests;
@@ -123,6 +168,184 @@
 				5815BDEE20D95D4B005150CB /* Info.plist */,
 			);
 			path = FlickerSampleUITests;
+			sourceTree = "<group>";
+		};
+		5815BDFA20D98AAA005150CB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5815BDFB20D98AAA005150CB /* APIManager */,
+				5815BDFC20D98AAA005150CB /* PhotoCacheManager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		5815BDFB20D98AAA005150CB /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				5815BDFF20DAB6FC005150CB /* APICore */,
+				5815BDFD20D98AF9005150CB /* RestApiRequest.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		5815BDFC20D98AAA005150CB /* PhotoCacheManager */ = {
+			isa = PBXGroup;
+			children = (
+				588F3AC620DC0C7E00E76439 /* FlickerImageCacheManager.swift */,
+				588F3AC820DC0DEC00E76439 /* FlickerImageApiRequest.swift */,
+				588F3ACA20DC0F7F00E76439 /* FlickerImageApiManager.swift */,
+			);
+			path = PhotoCacheManager;
+			sourceTree = "<group>";
+		};
+		5815BDFF20DAB6FC005150CB /* APICore */ = {
+			isa = PBXGroup;
+			children = (
+				5815BE0020DAB70B005150CB /* RestApiCore.swift */,
+				5815BE0220DAB74D005150CB /* RestApiInterface.swift */,
+				5815BE1020DADDE9005150CB /* ApiConstant.swift */,
+			);
+			path = APICore;
+			sourceTree = "<group>";
+		};
+		5815BE1220DB49E6005150CB /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5815BE1320DB49E6005150CB /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		5815BE1520DB49F4005150CB /* FlickerListModule */ = {
+			isa = PBXGroup;
+			children = (
+				588F3ACF20DC2D9C00E76439 /* FlickerRestApi */,
+				588F3ACC20DC2D1D00E76439 /* Entity */,
+				5815BE1620DB49F4005150CB /* ApplicationLogic */,
+				5815BE1820DB49F4005150CB /* User Interface */,
+			);
+			path = FlickerListModule;
+			sourceTree = "<group>";
+		};
+		5815BE1620DB49F4005150CB /* ApplicationLogic */ = {
+			isa = PBXGroup;
+			children = (
+				5815BE1720DB49F4005150CB /* Interactor */,
+			);
+			path = ApplicationLogic;
+			sourceTree = "<group>";
+		};
+		5815BE1720DB49F4005150CB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5815BE2320DB4F65005150CB /* FlickerListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5815BE1820DB49F4005150CB /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				5815BE1920DB49F4005150CB /* ListModuleInterface */,
+				5815BE1A20DB49F4005150CB /* Presenter */,
+				5815BE1C20DB49F4005150CB /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		5815BE1920DB49F4005150CB /* ListModuleInterface */ = {
+			isa = PBXGroup;
+			children = (
+				5815BE1F20DB4E91005150CB /* ListViewProtocol.swift */,
+			);
+			path = ListModuleInterface;
+			sourceTree = "<group>";
+		};
+		5815BE1A20DB49F4005150CB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5815BE2120DB4F1A005150CB /* FlickerListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5815BE1C20DB49F4005150CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5815BE2520DB5DCF005150CB /* CustomeTableView */,
+				5815BE1D20DB4A26005150CB /* FlickerListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5815BE2520DB5DCF005150CB /* CustomeTableView */ = {
+			isa = PBXGroup;
+			children = (
+				5815BE2E20DBD8BB005150CB /* CollectionViewCell */,
+				5815BE2620DB5DFD005150CB /* FlickerPhotoTableViewCell.swift */,
+				5815BE2720DB5DFD005150CB /* FlickerPhotoTableViewCell.xib */,
+			);
+			path = CustomeTableView;
+			sourceTree = "<group>";
+		};
+		5815BE2A20DBC943005150CB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5815BE2B20DBC943005150CB /* Extensions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		5815BE2B20DBC943005150CB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5815BE2C20DBC952005150CB /* TableViewExtension.swift */,
+				5815BE3320DC01AC005150CB /* ImageViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5815BE2E20DBD8BB005150CB /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5815BE2F20DBD8D5005150CB /* CollectionImageViewCell.swift */,
+				5815BE3020DBD8D5005150CB /* CollectionImageViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		588F3ACC20DC2D1D00E76439 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				588F3ACD20DC2D5300E76439 /* PhotoModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		588F3ACF20DC2D9C00E76439 /* FlickerRestApi */ = {
+			isa = PBXGroup;
+			children = (
+				588F3AD020DC2D9C00E76439 /* FlickerListApiManager */,
+				588F3AD320DC2D9C00E76439 /* FlickerListApiRequest */,
+			);
+			path = FlickerRestApi;
+			sourceTree = "<group>";
+		};
+		588F3AD020DC2D9C00E76439 /* FlickerListApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				588F3AD120DC2D9C00E76439 /* FlickerListApiInterface.swift */,
+				588F3AD220DC2D9C00E76439 /* FlickerListApiManager.swift */,
+			);
+			path = FlickerListApiManager;
+			sourceTree = "<group>";
+		};
+		588F3AD320DC2D9C00E76439 /* FlickerListApiRequest */ = {
+			isa = PBXGroup;
+			children = (
+				588F3AD420DC2D9C00E76439 /* FlickerListApiRequest.swift */,
+			);
+			path = FlickerListApiRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +458,8 @@
 				5815BDD720D95D4A005150CB /* LaunchScreen.storyboard in Resources */,
 				5815BDD420D95D4A005150CB /* Assets.xcassets in Resources */,
 				5815BDD220D95D4A005150CB /* Main.storyboard in Resources */,
+				5815BE3220DBD8D5005150CB /* CollectionImageViewCell.xib in Resources */,
+				5815BE2920DB5DFD005150CB /* FlickerPhotoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +484,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5815BDCF20D95D4A005150CB /* ViewController.swift in Sources */,
-				5815BDCD20D95D4A005150CB /* AppDelegate.swift in Sources */,
+				5815BE2420DB4F65005150CB /* FlickerListInteractor.swift in Sources */,
+				588F3AD520DC2D9C00E76439 /* FlickerListApiInterface.swift in Sources */,
+				5815BE3120DBD8D5005150CB /* CollectionImageViewCell.swift in Sources */,
+				5815BE2220DB4F1A005150CB /* FlickerListPresenter.swift in Sources */,
+				588F3AC920DC0DEC00E76439 /* FlickerImageApiRequest.swift in Sources */,
+				588F3AD720DC2D9C00E76439 /* FlickerListApiRequest.swift in Sources */,
+				5815BE0120DAB70B005150CB /* RestApiCore.swift in Sources */,
+				5815BE1E20DB4A26005150CB /* FlickerListViewController.swift in Sources */,
+				5815BE1420DB49E7005150CB /* AppDelegate.swift in Sources */,
+				588F3AC720DC0C7E00E76439 /* FlickerImageCacheManager.swift in Sources */,
+				5815BE2820DB5DFD005150CB /* FlickerPhotoTableViewCell.swift in Sources */,
+				5815BE0320DAB74D005150CB /* RestApiInterface.swift in Sources */,
+				5815BE2D20DBC952005150CB /* TableViewExtension.swift in Sources */,
+				588F3AD620DC2D9C00E76439 /* FlickerListApiManager.swift in Sources */,
+				5815BDFE20D98AF9005150CB /* RestApiRequest.swift in Sources */,
+				588F3ACB20DC0F7F00E76439 /* FlickerImageApiManager.swift in Sources */,
+				5815BE3420DC01AC005150CB /* ImageViewExtension.swift in Sources */,
+				5815BE2020DB4E91005150CB /* ListViewProtocol.swift in Sources */,
+				5815BE1120DADDE9005150CB /* ApiConstant.swift in Sources */,
+				588F3ACE20DC2D5300E76439 /* PhotoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +511,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588F3ADA20DC2E8C00E76439 /* ListViewControllerTest.swift in Sources */,
 				5815BDE220D95D4B005150CB /* FlickerSampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,7 +607,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +658,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -427,6 +671,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MNWG2J99Y;
 				INFOPLIST_FILE = FlickerSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravi.FlickerSample;
@@ -441,6 +686,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MNWG2J99Y;
 				INFOPLIST_FILE = FlickerSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravi.FlickerSample;

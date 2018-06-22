@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+struct FlickerImageApiRequest: RestApiUrlRequest {
+    
+    var imgUrl : URL?
+    init(_ url : URL) {
+        self.imgUrl = url
+    }
+    
+    var apiUrlRequest: URLRequest {
+        var request = URLRequest(url: imgUrl!)
+        request.setValue("application/vnd.fortech.books-list+json", forHTTPHeaderField: "Accept")
+        request.httpMethod = "GET"
+        return request
+    }
+}

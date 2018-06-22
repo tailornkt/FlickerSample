@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+protocol RestApiUrlRequest {
+    var apiUrlRequest : URLRequest { get }
+}
+
+protocol RestApiRequest {
+    func makeRestApiRequest(request : RestApiUrlRequest, onSuccess: @escaping (_ result: RestApiResponse) -> Void, onFail:@escaping (_ error: Error) -> Void) -> URLSessionDataTask
+}

@@ -8,7 +8,15 @@
 
 import Foundation
 
-protocol ListInteractorProtocol {
+protocol IndicatableView: class {
+    func showActivityIndicator()
+    func hideActivityIndicator()
+}
+protocol ListViewProtocol:IndicatableView {
     
-    func getPhotos(_ pgaeNumber : Int) 
+    func getPhotoList(photos: [[PhotoModel]])
+    func showNoResultAlert()
+    func hideTableView()
+    func showTableView()
+    func setNavigationTitle(_ title: String)
 }
