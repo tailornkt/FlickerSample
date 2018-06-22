@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FlickerSampleTests/ListViewControllerTest.swift"
-            timestampString = "551337300.646705"
+            timestampString = "551350641.5615211"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "testGetPhotoList()"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "testPaging()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

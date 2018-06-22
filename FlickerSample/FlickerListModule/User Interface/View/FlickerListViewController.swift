@@ -82,15 +82,19 @@ extension FlickerListViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kCellIdentifier)
-        //(cell as? FlickerPhotoTableViewCell)?.lblCount.text = String(indexPath.row)
-        if indexPath.row >= (self.photos.count - (self.photos.count/2)) && !self.isDownloadInProgress {
+        (cell as? FlickerPhotoTableViewCell)?.setupData(self.photos[indexPath.row])
+        let count = (self.photos.count - (self.photos.count/2))
+        self.loadNextPageData(indexPath, isInProcess: self.isDownloadInProgress, count: count)
+        cell?.selectionStyle = .none
+        return cell!
+    }
+    
+    func loadNextPageData(_ indexPath: IndexPath,isInProcess:Bool,count:Int)  {
+        if indexPath.row >= count && !isInProcess {
             self.isDownloadInProgress = true
             pageNumber += 1
             self.presenter?.fetchDataFromServer(pageNumber)
         }
-        (cell as? FlickerPhotoTableViewCell)?.setupData(self.photos[indexPath.row])
-        cell?.selectionStyle = .none
-        return cell!
     }
 }
 
