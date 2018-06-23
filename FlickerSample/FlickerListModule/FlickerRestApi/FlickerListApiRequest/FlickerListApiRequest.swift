@@ -4,7 +4,7 @@
 //
 //  Created by Ravi Tailor on 20/06/18.
 //  Copyright © 2018 Ravi Tailor. All rights reserved.
-//
+//  Purpose: It is url request in beautiful and readable manner
 
 import Foundation
 
@@ -20,6 +20,10 @@ struct FlickerListApiRequest: RestApiUrlRequest {
   
     let KFlickerPhotosSearchEndpoint                                = "flickr.photos.search"
     
+    /**
+     * Summary: apiUrlRequest:
+     * creating flicker image url with the help of user defined parameters like pagenumber for paging
+     */
     var apiUrlRequest: URLRequest {
         //https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=3e7cc266ae2b0e0d78e279ce8e361736&%20format=json&nojsoncallback=2&safe_search=1&text=kittens&per_page=10&page=2
         let pageNumber = String(describing: self.pageNumber!)

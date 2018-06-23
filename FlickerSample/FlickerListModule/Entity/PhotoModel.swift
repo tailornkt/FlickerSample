@@ -4,12 +4,12 @@
 //
 //  Created by Ravi Tailor on 20/06/18.
 //  Copyright © 2018 Ravi Tailor. All rights reserved.
-//
+//  Purpose: It is model representation of downloaded object 
 
 import Foundation
 
 struct PhotoModel {
-
+    
     var id: String
     var owner: String
     var secret: String
@@ -19,7 +19,14 @@ struct PhotoModel {
     var ispublic: Bool
     var isfriend: Bool
     var isfamily: Bool
-
+    
+    /**
+     * Summary: init:
+     * It is failable init.
+     *
+     * @param $json: it is taking downloaded model as json and creating a Flicker photo model
+     * @return:
+     */
     init?(json: [String : Any]?)  {
         guard let id = json?["id"] as? String,
             let owner = json?["owner"] as? String,
@@ -32,8 +39,8 @@ struct PhotoModel {
             let farm = json?["farm"] as? Int else {
                 return nil
         }
-
-
+        
+        
         self.id = id
         self.owner = owner
         self.secret = secret
@@ -43,7 +50,7 @@ struct PhotoModel {
         self.ispublic = ispublic
         self.isfriend = isfriend
         self.isfamily = isfamily
-
+        
     }
 }
 

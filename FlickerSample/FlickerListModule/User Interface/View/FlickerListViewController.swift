@@ -4,7 +4,7 @@
 //
 //  Created by Ravi Tailor on 19/06/18.
 //  Copyright © 2018 Ravi Tailor. All rights reserved.
-//
+// Purpose: It is viewcontroller, managing all life cycle of viewcontroller 
 
 import UIKit
 
@@ -27,7 +27,11 @@ class FlickerListViewController: UIViewController {
             }
         }
     }
-    
+    /**
+     * Summary: viewDidLoad:
+     * It's used to initialize code after view load, make a first hit with default search text kitten
+     * @return:
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
         self.isDownloadInProgress = true
@@ -36,10 +40,12 @@ class FlickerListViewController: UIViewController {
         self.setupSearchController()
         self.presenter?.viewDidLoad(nil)
     }
-    
+    /**
+     * Summary: setupSearchController:
+     * It's used to set search controller in navigation bar
+     * @return:
+     */
     func setupSearchController()  {
-        // Setup the Search Controller
-        //searchController.searchResultsUpdater = self
         searchController.searchBar.delegate = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search your favourite"
@@ -54,7 +60,11 @@ class FlickerListViewController: UIViewController {
             self.navigationItem.titleView = self.searchController.searchBar
         }
     }
-    
+    /**
+     * Summary: configureFlickerModule:
+     * It's used to initialize code for basic configuration for VIPER Module
+     * @return:
+     */
     func configureFlickerModule()  {
         let apiClient = RestApiManager(sessionConfiguration: URLSessionConfiguration.default,
                                        operationQueue: OperationQueue.main)
@@ -66,15 +76,22 @@ class FlickerListViewController: UIViewController {
         listInteractor.output = presenter as! FlickerPhotoInteractorOutput
         
         presenter?.interactor = listInteractor
-        //  listPresenter.listWireframe = listWireframe
         
     }
-    
+    /**
+     * Summary: registerCustomeCell:
+     * It's used to register cell for tableview
+     * @return:
+     */
     func registerCustomeCell()  {
         self.tableView?.register(UINib(nibName: "FlickerPhotoTableViewCell", bundle: nil), forCellReuseIdentifier: kCellIdentifier)
     }
 }
-
+/**
+ * Summary: It is extension of FlickerListViewController
+ * It's used to implement tableview delegate and datasource:
+ * @return:
+ */
 extension FlickerListViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return photos.count
@@ -97,9 +114,17 @@ extension FlickerListViewController: UITableViewDelegate,UITableViewDataSource {
         }
     }
 }
-
+/**
+ * Summary: It is extension of FlickerListViewController
+ * It's used to implement UISearchBarDelegate delegate:
+ * @return:
+ */
 extension FlickerListViewController: UISearchBarDelegate {
-    
+    /**
+     * Summary: searchBarSearchButtonClicked:
+     * It's used to handle search bar delegate and make search result with search text
+     * @return:
+     */
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.hideTableView()
         pageNumber = 1
@@ -110,21 +135,37 @@ extension FlickerListViewController: UISearchBarDelegate {
         self.searchController.isActive = false
     }
 }
-
+/**
+ * Summary: It is extension of FlickerListViewController
+ * It's used to implement ListViewProtocol:
+ * @return:
+ */
 extension FlickerListViewController : ListViewProtocol {
-    
+    /**
+     * Summary: showTableView:
+     * It's used to show table view
+     * @return:
+     */
     func hideTableView() {
         self.tableView?.isHidden = true
     }
     func showTableView() {
         self.tableView?.isHidden = false
     }
-    
+    /**
+     * Summary: getPhotoList:
+     * It's used to get photoList from presenter to viewcontroller
+     * @return:
+     */
     func getPhotoList(photos: [[PhotoModel]]) {
         self.showTableView()
         self.photos.append(contentsOf: photos)
     }
-    
+    /**
+     * Summary: showNoResultAlert:
+     * It is used to show alert of no result
+     * @return:
+     */
     func showNoResultAlert() {
         let alert = UIAlertController(
             title: "No Result Found",
@@ -139,14 +180,29 @@ extension FlickerListViewController : ListViewProtocol {
         
         self.present(alert, animated: true, completion: nil)
     }
+    /**
+     * Summary: showActivityIndicator:
+     * It's used to show activity indicator on view
+     * @return:
+     */
     func showActivityIndicator() {
         self.activityIndicatorView?.isHidden = false
-       self.activityIndicatorView?.startAnimating()
+        self.activityIndicatorView?.startAnimating()
     }
+    /**
+     * Summary: hideActivityIndicator:
+     * It's used to hide activity indicator on view
+     * @return:
+     */
     func hideActivityIndicator() {
-         self.activityIndicatorView?.isHidden = true
+        self.activityIndicatorView?.isHidden = true
         self.activityIndicatorView?.stopAnimating()
     }
+    /**
+     * Summary: setNavigationTitle:
+     * It's used to show navigation title
+     * @return:
+     */
     func setNavigationTitle(_ title: String) {
         self.title = title
     }
