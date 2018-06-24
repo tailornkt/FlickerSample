@@ -10,7 +10,6 @@
 		5815BDD220D95D4A005150CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5815BDD020D95D4A005150CB /* Main.storyboard */; };
 		5815BDD420D95D4A005150CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5815BDD320D95D4A005150CB /* Assets.xcassets */; };
 		5815BDD720D95D4A005150CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5815BDD520D95D4A005150CB /* LaunchScreen.storyboard */; };
-		5815BDE220D95D4B005150CB /* FlickerSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BDE120D95D4B005150CB /* FlickerSampleTests.swift */; };
 		5815BDED20D95D4B005150CB /* FlickerSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BDEC20D95D4B005150CB /* FlickerSampleUITests.swift */; };
 		5815BDFE20D98AF9005150CB /* RestApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BDFD20D98AF9005150CB /* RestApiRequest.swift */; };
 		5815BE0120DAB70B005150CB /* RestApiCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815BE0020DAB70B005150CB /* RestApiCore.swift */; };
@@ -61,7 +60,6 @@
 		5815BDD620D95D4A005150CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5815BDD820D95D4A005150CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5815BDDD20D95D4B005150CB /* FlickerSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickerSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5815BDE120D95D4B005150CB /* FlickerSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerSampleTests.swift; sourceTree = "<group>"; };
 		5815BDE320D95D4B005150CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5815BDE820D95D4B005150CB /* FlickerSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickerSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5815BDEC20D95D4B005150CB /* FlickerSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerSampleUITests.swift; sourceTree = "<group>"; };
@@ -154,7 +152,6 @@
 		5815BDE020D95D4B005150CB /* FlickerSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				5815BDE120D95D4B005150CB /* FlickerSampleTests.swift */,
 				588F3AD920DC2E8C00E76439 /* ListViewControllerTest.swift */,
 				5815BDE320D95D4B005150CB /* Info.plist */,
 			);
@@ -512,7 +509,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				588F3ADA20DC2E8C00E76439 /* ListViewControllerTest.swift in Sources */,
-				5815BDE220D95D4B005150CB /* FlickerSampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
